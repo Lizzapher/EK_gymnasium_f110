@@ -1,0 +1,52 @@
+passs through to terminal for creating waypoints
+an image file will be created after check point selection to show what was selected
+just update and copy paste
+
+resolution and origin can be found in the yaml file
+
+no commas for the origin position
+
+back tick for powershell, backslash when using bash
+for ease multiple args information is stored here:
+
+python 3_Generate_Checkpoints_PGM.py `
+    --image RaceTracks/berlin.png `
+    --n_checkpoints 8 `
+    --resolution 0.05 `
+    --origin -11.606540 -26.520793 0.000000 `
+    --name berlin `
+    --output RaceTracks/berlin.json
+	
+python 3_Generate_Checkpoints_PGM.py `
+    --image RaceTracks/Circuit_de_Monaco.pgm `
+    --n_checkpoints 16 `
+    --resolution 0.1290673756012793 `
+    --origin -6.324301, -19.360106, 0.000000 `
+    --name Circuit_de_Monaco `
+    --output RaceTracks/Circuit_de_Monaco.json
+	
+	
+python 3_Generate_Checkpoints_PGM.py `
+    --image RaceTracks/example_map.png `
+    --n_checkpoints 8 `
+    --resolution 0.062500 `
+    --origin -78.21853769831466,-44.37590462453829, 0.000000 `
+    --name example_map `
+    --output RaceTracks/example_map.json
+	
+	
+python 3_Generate_Checkpoints_PGM.py `
+    --image maps/BrandsHatch/BrandsHatch_map.png `
+    --n_checkpoints 16 `
+    --resolution 0.05005 `
+    --origin -39.42711136508635,-88.20832098289893, 0.000000 `
+    --name BrandsHatch_map `
+    --output maps/BrandsHatch/BrandsHatch_map.json
+
+    python 3_Generate_Checkpoints_PGM.py `
+    --image maps/Catalunya/Catalunya_map.png `
+    --n_checkpoints 8 `
+    --resolution 0.06016 `
+    --origin -91.90749878749725,-75.75284314488522, 0.000000 `
+    --name Catalunya_map `
+    --output maps/Catalunya/Catalunya_map.json
